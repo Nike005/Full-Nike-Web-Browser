@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/search_bar" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/search_bar_height">
+    <View android:layout_gravity="center_vertical" android:background="?android:attr/dividerVertical" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textSize="22sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/search_query" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentLeft="true"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+        <ImageButton android:id="@+id/button_back" android:layout_width="wrap_content" android:layout_height="match_parent" android:contentDescription="@null" app:srcCompat="@drawable/ic_action_collapse" style="?android:attr/buttonBarButtonStyle"/>
+        <View android:layout_gravity="center_vertical" android:background="?android:attr/dividerVertical" android:layout_width="1dp" android:layout_height="25dp"/>
+        <ImageButton android:id="@+id/button_next" android:layout_width="wrap_content" android:layout_height="match_parent" android:contentDescription="@null" app:srcCompat="@drawable/ic_action_expand" style="?android:attr/buttonBarButtonStyle"/>
+        <View android:layout_gravity="center_vertical" android:background="?android:attr/dividerVertical" android:layout_width="1dp" android:layout_height="25dp"/>
+        <ImageButton android:id="@+id/button_quit" android:layout_width="wrap_content" android:layout_height="match_parent" android:contentDescription="@null" app:srcCompat="@drawable/ic_action_delete" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="proxy_choices_array">
+        <item>Yok</item>
+        <item>Orbot</item>
+        <item>El ile</item>
+    </array>
+    <array name="url_content_array">
+        <item>Alan adı (varsayılan)</item>
+        <item>URL</item>
+        <item>Başlık</item>
+    </array>
+</resources>

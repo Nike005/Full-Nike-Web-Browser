@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/bookmark_settings">
+        <Preference android:title="@string/export_bookmarks" android:key="export_bookmark"/>
+        <Preference android:title="@string/import_backup" android:key="import_bookmark"/>
+        <Preference android:title="@string/importbookmarks" android:key="import_browser"/>
+        <Preference android:title="@string/action_delete_all_bookmarks" android:key="delete_bookmarks"/>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:title="@string/settings_general" android:fragment="acr.browser.lightning.fragment.GeneralSettingsFragment"/>
+    <header android:title="@string/bookmark_settings" android:fragment="acr.browser.lightning.fragment.BookmarkSettingsFragment"/>
+    <header android:title="@string/settings_display" android:fragment="acr.browser.lightning.fragment.DisplaySettingsFragment"/>
+    <header android:title="@string/settings_privacy" android:fragment="acr.browser.lightning.fragment.PrivacySettingsFragment"/>
+    <header android:title="@string/settings_advanced" android:fragment="acr.browser.lightning.fragment.AdvancedSettingsFragment"/>
+    <header android:title="@string/settings_about" android:summary="@string/settings_about_explain" android:fragment="acr.browser.lightning.fragment.AboutSettingsFragment"/>
+    <header android:title="@string/debug_title" android:fragment="acr.browser.lightning.fragment.DebugSettingsFragment"/>
+</preference-headers>

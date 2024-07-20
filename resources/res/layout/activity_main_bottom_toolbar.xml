@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/coordinator_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.drawerlayout.widget.DrawerLayout android:id="@+id/drawer_layout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ui_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:gravity="center" android:id="@+id/adView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <include layout="@layout/browser_content"/>
+            <include layout="@layout/search_interface"/>
+            <include layout="@layout/toolbar_bottom"/>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="start" android:id="@+id/left_drawer" android:background="?attr/drawerBackground" android:fitsSystemWindows="true" android:layout_width="@dimen/navigation_width" android:layout_height="match_parent" android:weightSum="1"/>
+        <FrameLayout android:layout_gravity="end" android:id="@+id/right_drawer" android:background="?attr/drawerBackground" android:fitsSystemWindows="true" android:layout_width="@dimen/navigation_width" android:layout_height="match_parent" android:weightSum="1"/>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

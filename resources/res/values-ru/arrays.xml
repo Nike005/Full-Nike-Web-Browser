@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="proxy_choices_array">
+        <item>Нет</item>
+        <item>Orbot</item>
+        <item>Вручную</item>
+    </array>
+    <array name="url_content_array">
+        <item>Доменное имя (по умолчанию)</item>
+        <item>URL</item>
+        <item>Заголовок</item>
+    </array>
+</resources>

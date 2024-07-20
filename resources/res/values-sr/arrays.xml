@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="proxy_choices_array">
+        <item>Ништа</item>
+        <item>Орбот</item>
+        <item>Ручно</item>
+    </array>
+    <array name="url_content_array">
+        <item>Домен (подраз.)</item>
+        <item>УРЛ</item>
+        <item>Наслов</item>
+    </array>
+</resources>

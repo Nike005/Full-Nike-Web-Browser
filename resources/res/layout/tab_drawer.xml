@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/tabs_background" android:layout_width="0dp" android:layout_height="0dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/tab_title_panel" android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+        <FrameLayout android:gravity="center" android:id="@+id/tab_header_button" android:background="?attr/actionBarItemBackground" android:layout_width="?attr/actionBarSize" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:id="@+id/plusIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/action_new_tab" app:srcCompat="@drawable/ic_action_tabs"/>
+        </FrameLayout>
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:gravity="center_vertical" android:id="@+id/tab_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:minHeight="?android:attr/listPreferredItemHeight" android:text="@string/tabs" android:maxLines="1" android:fontFamily="sans-serif"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/tabs_list" android:layout_width="match_parent" android:layout_height="0dp" android:divider="@null" android:dividerHeight="0dp" android:layout_weight="1" android:overScrollMode="ifContentScrolls"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/bottomPanel" android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:baselineAligned="false" android:weightSum="4">
+        <FrameLayout android:id="@+id/action_back" android:background="?attr/actionBarItemBackground" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:id="@+id/icon_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/action_back" app:srcCompat="@drawable/ic_action_back"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/action_home" android:background="?attr/actionBarItemBackground" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:id="@+id/icon_home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/action_homepage" app:srcCompat="@drawable/ic_action_home"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/action_forward" android:background="?attr/actionBarItemBackground" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:id="@+id/icon_forward" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/action_forward" app:srcCompat="@drawable/ic_action_forward"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/new_tab_button" android:background="?attr/actionBarItemBackground" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:id="@+id/icon_plus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/action_new_tab" app:srcCompat="@drawable/ic_action_plus"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

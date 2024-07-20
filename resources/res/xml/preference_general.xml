@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/settings_general" android:key="general_settings">
+        <CheckBoxPreference android:title="@string/flash" android:key="cb_flash" android:defaultValue="false"/>
+        <CheckBoxPreference android:title="@string/enable_search_bar_notification" android:key="cb_notification_search_bar" android:defaultValue="true"/>
+        <CheckBoxPreference android:title="@string/enable_weather_notification" android:key="cb_notification_weather" android:defaultValue="true"/>
+        <CheckBoxPreference android:title="@string/block_ads" android:key="cb_ads" android:defaultValue="false"/>
+        <CheckBoxPreference android:title="@string/block" android:key="cb_images" android:defaultValue="false"/>
+        <CheckBoxPreference android:title="@string/java" android:key="cb_javascript" android:defaultValue="true"/>
+        <Preference android:title="@string/http_proxy" android:key="proxy"/>
+        <Preference android:title="@string/agent" android:key="agent"/>
+        <Preference android:title="@string/download" android:key="download"/>
+        <Preference android:title="@string/home" android:key="home"/>
+        <Preference android:title="@string/search" android:key="search"/>
+        <Preference android:title="@string/search_suggestions" android:key="suggestions_choice"/>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/background" android:background="?attr/listBackground" android:clickable="true" android:layout_width="120dp" android:layout_height="120dp">
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp">
+        <ImageView android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@+id/faviconBookmark" android:layout_width="60dp" android:layout_height="60dp" android:contentDescription="Favicon"/>
+        <TextView android:textSize="40sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/letter" android:layout_width="match_parent" android:layout_height="match_parent" android:text="C"/>
+    </FrameLayout>
+    <TextView android:textAppearance="?android:attr/textAppearanceListItemSmall" android:ellipsize="end" android:gravity="center" android:id="@+id/textBookmark" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:minHeight="?android:attr/listPreferredItemHeightSmall" android:maxLines="1" android:singleLine="true" android:fontFamily="sans-serif" android:textAlignment="center"/>
+</LinearLayout>

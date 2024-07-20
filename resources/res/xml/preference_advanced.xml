@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/settings_advanced">
+        <CheckBoxPreference android:title="@string/window" android:key="allow_new_window" android:summary="@string/recommended" android:defaultValue="true"/>
+        <CheckBoxPreference android:title="@string/cookies" android:key="allow_cookies" android:summary="@string/recommended" android:defaultValue="true"/>
+        <CheckBoxPreference android:title="@string/incognito_cookies" android:key="incognito_cookies" android:defaultValue="false"/>
+        <CheckBoxPreference android:title="@string/restore" android:key="restore_tabs" android:defaultValue="true"/>
+        <Preference android:title="@string/text_encoding" android:key="text_encoding"/>
+        <Preference android:title="@string/rendering_mode" android:key="rendering_mode"/>
+        <Preference android:title="@string/url_contents" android:key="url_contents"/>
+    </PreferenceCategory>
+</PreferenceScreen>

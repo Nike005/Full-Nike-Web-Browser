@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="proxy_choices_array">
+        <item>Ninguno</item>
+        <item>Orbot</item>
+        <item>Manual</item>
+    </array>
+    <array name="url_content_array">
+        <item>Dominio (por defecto)</item>
+        <item>Dirección URL</item>
+        <item>Título</item>
+    </array>
+</resources>

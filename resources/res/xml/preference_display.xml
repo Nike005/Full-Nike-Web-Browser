@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/settings_display">
+        <Preference android:title="@string/change_home_page_background" android:key="setHomePageBackground"/>
+        <CheckBoxPreference android:title="@string/tabs_in_drawer" android:key="cb_drawertabs" android:defaultValue="true"/>
+        <CheckBoxPreference android:title="@string/swap_bookmarks_and_tabs" android:key="cb_swapdrawers" android:defaultValue="true"/>
+        <CheckBoxPreference android:title="@string/fullScreenOption" android:key="fullScreenOption" android:defaultValue="false"/>
+        <CheckBoxPreference android:title="@string/fullscreen" android:key="fullscreen" android:defaultValue="true"/>
+        <CheckBoxPreference android:title="@string/wideViewPort" android:key="wideViewPort" android:summary="@string/recommended" android:defaultValue="true"/>
+        <CheckBoxPreference android:title="@string/overViewMode" android:key="overViewMode" android:summary="@string/recommended" android:defaultValue="true"/>
+        <CheckBoxPreference android:title="@string/reflow" android:key="text_reflow" android:defaultValue="false"/>
+        <Preference android:title="@string/title_text_size" android:key="text_size"/>
+    </PreferenceCategory>
+</PreferenceScreen>

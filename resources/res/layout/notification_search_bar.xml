@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/notice_search_bar" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="20sp" android:textColor="#ffb1bcbe" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/picture" android:background="@drawable/notification_bg" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:text="@string/search_hint" android:drawableRight="@drawable/ic_search_black_24dp" android:drawablePadding="8dp" android:alpha="1"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="20sp" android:textColor="#ffb1bcbe" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/text" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginLeft="18dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:text="@string/search_hint" android:drawablePadding="8dp" android:alpha="1"/>
+    </FrameLayout>
+</FrameLayout>

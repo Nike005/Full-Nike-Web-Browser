@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="proxy_choices_array">
+        <item>Bez proxy</item>
+        <item>Orbot</item>
+        <item>Ręczne ustawienia</item>
+    </array>
+    <array name="url_content_array">
+        <item>Tylko domena (domyślne)</item>
+        <item>Pełny URL</item>
+        <item>Tytuł strony</item>
+    </array>
+</resources>

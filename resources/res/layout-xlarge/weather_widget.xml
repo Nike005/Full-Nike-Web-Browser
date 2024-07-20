@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/weatherWidget" android:background="#aa000000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" app:cardCornerRadius="4dp">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="120dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/temperaturePanel" android:visibility="gone" android:layout_width="250dp" android:layout_height="match_parent" android:layout_marginLeft="16dp">
+            <TextView android:textSize="100sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@+id/temperature" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="-16dp" android:layout_marginBottom="16dp" android:text="64°"/>
+            <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginBottom="8dp">
+                <TextView android:textSize="48sp" android:textColor="#ffffffff" android:id="@+id/celsiusButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="C" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/locationPanel" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_toLeftOf="@+id/imagePanel" android:layout_toRightOf="@+id/temperaturePanel">
+            <TextView android:textSize="40sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@+id/location" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/noWeatherData" android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/imagePanel" android:visibility="gone" android:layout_width="250dp" android:layout_height="match_parent" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+            <TextView android:textSize="20sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@+id/weatherText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mostly cloudy" android:textAlignment="center"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/weather_icon" android:layout_width="50dp" android:layout_height="match_parent" android:src="@drawable/simple_weather_icon_01"/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

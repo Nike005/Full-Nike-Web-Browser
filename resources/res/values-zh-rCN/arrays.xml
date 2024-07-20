@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="proxy_choices_array">
+        <item>无</item>
+        <item>Orbot</item>
+        <item>手动</item>
+    </array>
+    <array name="url_content_array">
+        <item>域 (默认)</item>
+        <item>URL</item>
+        <item>标题</item>
+    </array>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/backgroundImage" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.viewpager.widget.ViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="100dp" android:layout_above="@+id/tab_layout" android:layout_alignParentTop="true"/>
+            <com.google.android.material.tabs.TabLayout android:layout_gravity="left" android:id="@+id/tab_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_alignParentBottom="true" app:tabMode="0"/>
+        </RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

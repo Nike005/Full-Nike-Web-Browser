@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?android:attr/selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="100dp">
+        <ImageView android:id="@+id/image" android:layout_width="100dp" android:layout_height="match_parent" android:src="@drawable/placeholder" android:scaleType="centerCrop"/>
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp">
+            <TextView android:textSize="20sp" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="News Title" android:lines="1"/>
+            <TextView android:ellipsize="end" android:id="@+id/text" android:layout_width="match_parent" android:layout_height="match_parent" android:text="news body" android:lines="2" android:layout_above="@+id/footer" android:layout_below="@+id/title"/>
+            <RelativeLayout android:id="@+id/footer" android:layout_width="match_parent" android:layout_height="16dp" android:layout_alignParentBottom="true">
+                <TextView android:textSize="12sp" android:gravity="start" android:id="@+id/source" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="News Title" android:lines="1" android:layout_toLeftOf="@+id/date" android:layout_alignParentBottom="true" android:layout_toStartOf="@+id/date"/>
+                <TextView android:textSize="12sp" android:gravity="end" android:id="@+id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="News Title" android:lines="1" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:textAlignment="viewEnd" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

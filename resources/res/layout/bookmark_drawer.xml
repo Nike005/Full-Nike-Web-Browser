@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/bookmark_title" android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+        <FrameLayout android:gravity="center" android:id="@+id/bookmark_back_button" android:background="?attr/actionBarItemBackground" android:layout_width="?attr/actionBarSize" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:id="@+id/starIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="Favicon" app:srcCompat="@drawable/ic_action_star"/>
+        </FrameLayout>
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:gravity="center_vertical" android:id="@+id/bookmarksDrawerTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:minHeight="?android:attr/listPreferredItemHeight" android:text="@string/action_bookmarks" android:maxLines="1" android:fontFamily="sans-serif"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/right_drawer_list" android:layout_width="match_parent" android:layout_height="0dp" android:divider="@null" android:dividerHeight="0dp" android:layout_weight="1"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/bottomPanel" android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:baselineAligned="false" android:weightSum="3">
+        <FrameLayout android:id="@+id/action_toggle_desktop" android:background="?attr/actionBarItemBackground" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:id="@+id/icon_desktop" android:paddingLeft="4dp" android:paddingTop="4dp" android:paddingRight="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/action_back" app:srcCompat="@drawable/ic_action_desktop"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/action_add_bookmark" android:background="?attr/actionBarItemBackground" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:id="@+id/icon_star" android:paddingLeft="4dp" android:paddingTop="4dp" android:paddingRight="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/action_new_tab" app:srcCompat="@drawable/ic_action_star"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/action_reading" android:background="?attr/actionBarItemBackground" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:id="@+id/icon_reading" android:paddingLeft="4dp" android:paddingTop="4dp" android:paddingRight="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/action_forward" app:srcCompat="@drawable/ic_action_reading"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

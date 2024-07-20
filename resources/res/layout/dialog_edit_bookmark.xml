@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:padding="@dimen/dialog_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText android:id="@+id/bookmark_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_title" android:maxLines="1" android:singleLine="true"/>
+    <EditText android:id="@+id/bookmark_url" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_url" android:maxLines="1" android:singleLine="true" android:inputType="textUri"/>
+    <AutoCompleteTextView android:id="@+id/bookmark_folder" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/folder" android:maxLines="1" android:singleLine="true"/>
+    <CheckBox android:id="@+id/showOnHomePage" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Show on home page"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="url_content_array">
+        <item>도메인 (기본값)</item>
+        <item>URL</item>
+        <item>페이지 제목</item>
+    </array>
+</resources>

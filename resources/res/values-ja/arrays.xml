@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="proxy_choices_array">
+        <item>使用しない</item>
+        <item>Orbot</item>
+        <item>手動</item>
+    </array>
+    <array name="url_content_array">
+        <item>ドメイン名 (デフォルト)</item>
+        <item>URL</item>
+        <item>タイトル</item>
+    </array>
+</resources>
